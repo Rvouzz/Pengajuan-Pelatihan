@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Hapus dokumen dari folder
     foreach ($dokumen_files as $file) {
-        $file_path = '../../Dokumen/' . $file;
+        $file_path = '../../Upload/Pendukung/' . $file;
         if (file_exists($file_path)) {
             unlink($file_path);
         }
@@ -47,6 +47,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt_approval->bind_param("i", $id);
     $stmt_approval->execute();
     $stmt_approval->close();
+
+    // Hapus dari tbl_berkas
+    $query_berkas = "DELETE FROM tbl_berkas WHERE id_pengajuan = ?";
+    $stmt_berkas = $koneksi->prepare($query_berkas);
+    $stmt_berkas->bind_param("i", $id);
+    $stmt_berkas->execute();
+    $stmt_berkas->close();
+
+    // Hapus dari tbl_surat
+    $query_surat = "DELETE FROM tbl_surat WHERE id_pengajuan = ?";
+    $stmt_surat = $koneksi->prepare($query_surat);
+    $stmt_surat->bind_param("i", $id);
+    $stmt_surat->execute();
+    $stmt_surat->close();
 
     // Hapus dari tbl_pengajuan
     $query_delete = "DELETE FROM tbl_pengajuan WHERE id_pengajuan = ?";

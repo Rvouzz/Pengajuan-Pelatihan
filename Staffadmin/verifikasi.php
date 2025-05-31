@@ -153,7 +153,7 @@ $isDisabled = in_array($data_approval['approval_kepegawaian'], [1, 2]) ? 'disabl
                                     <br>
                                     <div class="form-group row">
                                         <div class="col-lg-5 col-md-9 col-sm-8">
-                                            <p><a href="../Dokumen/<?php echo htmlspecialchars($data['dokumen']); ?>"
+                                            <p><a href="../Upload/Pendukung/<?php echo htmlspecialchars($data['dokumen']); ?>"
                                                     target="_blank"><?php echo $nama_singkat; ?></a></p>
                                         </div>
                                     </div>

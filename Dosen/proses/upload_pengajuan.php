@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $kode_akun        = clean_input($_POST['kode_akun'] ?? '');
 
     // Folder penyimpanan dokumen
-    $upload_dir = '../../Dokumen/';
+    $upload_dir = '../../Upload/Pendukung/';
     if (!is_dir($upload_dir)) {
         mkdir($upload_dir, 0755, true);
     }

@@ -154,7 +154,7 @@ $isDisabled = in_array($data_approval['approval_kpj'], [1, 2]) ? 'disabled' : ''
                                 </label>
                                 <div class="col-lg-5 col-md-9 col-sm-8">
                                     <p class="mb-0" style="margin-top: -13px;">
-                                        <a href="../Dokumen/<?php echo htmlspecialchars($data['dokumen']); ?>"
+                                        <a href="../Upload/Pendukung/<?php echo htmlspecialchars($data['dokumen']); ?>"
                                             target="_blank" class="text-primary d-inline-flex align-items-center"
                                             title="Download Proposal Pelatihan">
                                             <i class="bi bi-file-earmark-pdf-fill mr-2" style="font-size: 1.25rem;"></i>

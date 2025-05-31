@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Simpan file: ST-007_2025.pdf
     $file_name = "ST-$id_format" . "_$tahun." . $ext;
-    $upload_dir = '../../Dokumen/Surat_Tugas/';
+    $upload_dir = '../../Upload/Surat_Tugas/';
     $tujuan = $upload_dir . $file_name;
 
     // Pastikan folder ada

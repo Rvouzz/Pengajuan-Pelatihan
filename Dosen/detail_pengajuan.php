@@ -300,12 +300,12 @@ $nama_singkat = isset($parts[0]) && isset($parts[1]) ? $parts[0] . '-' . $parts[
                                                     </div>
                                                 </div>
                                                 <div class="btn-group">
-                                                    <a href="../dokumen/<?php echo htmlspecialchars($data['dokumen']); ?>"
+                                                    <a href="../Upload/Pendukung/<?php echo htmlspecialchars($data['dokumen']); ?>"
                                                         class="btn btn-sm btn-outline-primary" target="_blank"
                                                         rel="noopener noreferrer">
                                                         <i class="fas fa-eye mr-1"></i> Lihat
                                                     </a>
-                                                    <a href="../dokumen/<?php echo htmlspecialchars($data['dokumen']); ?>"
+                                                    <a href="../Upload/Pendukung/<?php echo htmlspecialchars($data['dokumen']); ?>"
                                                         download class="btn btn-sm btn-outline-success">
                                                         <i class="fas fa-download mr-1"></i>
                                                     </a>

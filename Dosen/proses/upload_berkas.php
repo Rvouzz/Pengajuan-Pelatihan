@@ -8,7 +8,7 @@ if (!isset($_SESSION['nama'])) {
 }
 
 $maxFileSize = 1 * 1024 * 1024; // 1MB
-$uploadDir = '../../Upload/';
+$uploadDir = '../../Upload/Berkas/';
 if (!is_dir($uploadDir)) mkdir($uploadDir, 0777, true);
 
 $id_pengajuan = $_POST['id_pengajuan'] ?? '';

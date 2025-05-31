@@ -258,7 +258,7 @@ include 'sidebar_dosen.php' ?>
                                     default: label = key;
                                 }
 
-                                const fileUrl = `../Upload/${filename}`;
+                                const fileUrl = `../Upload/Berkas/${filename}`;
                                 const item = `<li class="list-group-item">
                         <strong>${label}: &nbsp</strong> 
                         <a href="${fileUrl}" target="_blank" rel="noopener noreferrer">${filename}</a>

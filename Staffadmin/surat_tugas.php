@@ -73,7 +73,7 @@ include 'sidebar_staffadmin.php' ?>
                     if (Array.isArray(response) && response.length > 0) {
                         $.each(response, function (index, item) {
                             var fileLink = (item.file_surat && item.file_surat !== '#')
-                                ? '../Dokumen/Surat_Tugas/' + item.file_surat
+                                ? '../Upload/Surat_Tugas/' + item.file_surat
                                 : '#';
 
                             var row = `
